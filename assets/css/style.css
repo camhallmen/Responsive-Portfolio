@@ -136,6 +136,15 @@ h3, h2 {
 
 /* portfolio page */
 
+.main-section-portfolio {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
 .work {
   position: relative;
   float: left;
@@ -221,29 +230,48 @@ input[type=submit] {
 
 /* Media Querys */
 @media only screen and (max-width: 980px) {
+
+/* Index */
 .main-section {
   width: 70%;
   height: 50%;
   margin-bottom: 500px;
 }
+nav {
+  position: relative;
+  right: 30px;
+}
+
+/* Portfolio */
+.main-section-portfolio {
+  margin-bottom: 20px;
+  width: 70%;
+}
     
 }
 @media only screen and (max-width: 768px) {
-      .main-section {
-        width: 90%;
-        margin-left: 20px;
-        margin-right: 0px;
-        position: relative;
-        left: 20px;
 
-      }
-      nav {
-        position: relative;
-        right: 50px;
-      }
+  /* Index */
+  .main-section {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 0px;
+    position: relative;
+    left: 20px;
+}
+  nav {
+    position: relative;
+    right: 50px;
+}
+
+  /* Portfolio */
+  .main-section-portfolio {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 640px) {
 
+  /* Index */
   #logo {
       width: 100%;
   }
@@ -261,5 +289,12 @@ input[type=submit] {
     width: 100%;
     height: 100%;
   }
-      
+
+  /* Portfolio */
+  .main-section-portfolio {
+    margin-top: 50px;
+  }
+  .work {
+    width: 100%;
+  }   
 }
